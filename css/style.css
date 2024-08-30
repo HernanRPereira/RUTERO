@@ -1,0 +1,777 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  
+}
+
+header {
+  min-height: 100vh;
+  padding-top: 10%;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("/media/fondoHeader01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+a {
+  text-decoration: none;
+}
+
+h2 {
+  text-align: center;
+  margin: 25px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  margin: 25%;
+  max-width: 50%;
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li a {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: rgb(30, 30, 30);
+  background-color: #ff7b397e; /* Cambia el color de fondo cuando el mouse pasa por encima */
+}
+
+span {
+  color: #ff8000;
+}
+
+.infoWeb {
+  padding: 10%;
+  padding-top: 50%;
+  color: #333;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.infoWeb h2 {
+  margin-bottom: 25px;
+}
+
+#sitios {
+  display: none;
+  min-height: 100vh;
+  padding: 10%;
+  padding-top: 10%;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url("/media/puestaSol.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #f1f1f1;
+  text-align: center;
+}
+
+.sitio .fecha {
+  color: #1f1f1f;
+}
+
+#sitios h2 {
+  margin-bottom: 25px;
+}
+
+#sitios h4 {
+  margin: 10px;
+}
+
+.cartas p {
+  margin: 10px;
+}
+
+button {
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  color: #ff8000; /* Color del texto */
+  background-color: #2e2e2e96; /* Color de fondo */
+  border-radius: 8px; /* Bordes redondeados */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+button:hover {
+  background-color: hsla(
+    30,
+    100%,
+    50%,
+    0.753
+  ); /* Color de fondo al pasar el mouse */
+  color: rgb(30, 30, 30); /* Color del texto al pasar el mouse */
+}
+
+#organizarWhatsapp{
+  width: 100%;
+  max-width: 180px;
+}
+
+.cartas {
+  background-position: center center;
+  background-size: cover;
+  padding: 30px;
+  margin: 15px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.cartas:first-child {
+  background-image: linear-gradient(0deg, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url("/media/antioquia001.jpg");
+}
+.cartas:nth-child(2) {
+  background-image: linear-gradient(0deg, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url("/media/antioquia004.jpg");
+}
+.cartas:nth-child(3) {
+  background-image: linear-gradient(0deg, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url("/media/antioquia003.jpg");
+}
+
+.cartas:nth-child(3) {
+  background-image: linear-gradient(0deg, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url("/media/ParqueArvi.jpg");
+}
+
+#organizar h2 {
+  margin: 35px;
+}
+
+.guia {
+  text-align: center;
+  color: #fff;
+  padding: 25px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("/media/guiaT.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.guia p {
+  margin: 25px;
+  margin-top: 6.5em;
+}
+
+#viaja {
+  min-height: 100vh;
+  padding: 10%;
+  padding-top: 40%;
+}
+#viaja p {
+  text-align: center;
+  margin: 25px;
+}
+
+.cart {
+  color: #fff;
+  text-align: center;
+  background-position: center center;
+  background-size: cover;
+  margin: 15px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cart h3 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.cart:first-child {
+  background-image: linear-gradient(0deg, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url("/media/bogota003.jpg");
+}
+.cart:nth-child(2) {
+  background-image: linear-gradient(0deg, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url("/media/cartagena006.jpg");
+}
+.cart:nth-child(3) {
+  background-image: linear-gradient(0deg, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url("/media/perdida001.jpg");
+}
+
+.container_footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: smaller;
+  min-height: 100vh;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.box_footer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 40px;
+  margin-bottom: 0;
+  height: 50vh;
+}
+
+.logoFooter {
+  height: 50%;
+  margin-bottom: 0;
+}
+
+.box_footer .terms {
+  text-align: center;
+}
+
+.box_footer h2 {
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.box_footer a {
+  margin-top: 10px;
+  color: #7a7a7a;
+  font-weight: 700;
+}
+
+.box_footer a:hover {
+  opacity: 0.8;
+}
+
+.box_footer a .fab {
+  font-size: 10px;
+}
+
+.box-color {
+  text-align: center;
+  background-color: #1f1f1f;
+}
+
+.box-color a {
+  padding-top: 100px;
+  color: #ff8000;
+}
+
+.imgModal{
+  width: 95%;
+  margin:25px 0;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.qr{
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+
+/* todo -----------------Login ----------------------*/
+#openModalBtn {
+  cursor: pointer;
+}
+/* Estilo del modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Contenido del modal */
+#organizarBtn {
+  background-color: #ff8000;
+  color: #1f1f1f;
+  width: 100%;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  border: 1px solid #888;
+  text-align: center;
+  margin: 10vh auto;
+  padding: 20px;
+  width: 75%;
+  max-width: 350px;
+  min-width: 150px;
+}
+
+/* Botón de cerrar del modal */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Estilo de los campos de entrada y el botón de submit */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+  margin-top: 10px;
+  font-size: smaller;
+}
+
+
+
+input[type="submit"] {
+  background-color: #ff8000;
+  color: #1f1f1f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="email"],
+input[type="password"] {
+  font-size: x-small;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: #888; /* Puedes ajustar el color según tus preferencias */
+}
+
+.signUpBlack {
+  color: #000; /* Color del texto */
+  font-size: small; /* Tamaño de fuente */
+  text-align: center; /* Alineación del texto */
+  margin-top: 5px; /* Espacio superior */
+}
+
+.signUpHere {
+  color: #ff8000; /* Color del enlace */
+  text-decoration: none; /* Eliminar subrayado predeterminado */
+  font-weight: bold; /* Negrita */
+}
+
+.signUpHere:hover {
+  text-decoration: underline; /* Subrayado al pasar el ratón sobre el enlace */
+}
+
+/* ! Fin Modal--------------- */
+
+#organizarLugar {
+  width: 80%;
+}
+
+#organizarFecha {
+  width: 80%;
+}
+
+#mas {
+  border-radius: 50% 0;
+  width: 25%;
+  margin: 25px;
+  background-color: #007500cb;
+  color: #000;
+}
+
+.add {
+  display: flex;
+  width: 100%;
+  height: 45%;
+}
+
+.divInsertado {
+  display: flex;
+  padding: 0;
+  align-items: center;
+  gap: 0;
+}
+
+
+
+.wpp {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.wpp h3 {
+  margin: 25px;
+}
+
+.wpp a {
+  color: green;
+}
+
+.delete {
+  margin: 0;
+  background-color: hsl(0, 100%, 34%);
+  color: #000;
+}
+
+.Whatsapp {
+  color: green;
+}
+
+.add button {
+  margin: 10px;
+}
+/* TODO Seccion Sitio*************************************************** */
+.sitio {
+  padding-top: 45px;
+  color: #1f1f1f;
+  display: none;
+}
+
+.sitio h2 {
+  margin: 45px;
+}
+
+.fecha {
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 45px;
+  color: #f1f1f1;
+}
+
+/* *********************************************************************REEL */
+.carruselImg {
+  display: flex;
+  justify-content: center;
+  background-color: #1f1f1f;
+}
+
+.reel {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+  display: flex;
+  align-content: center;
+  width: 75%;
+}
+
+.reel a {
+  width: 0;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+
+.reel a img {
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
+}
+
+.reel a:hover {
+  cursor: crosshair;
+  width: 50%;
+  opacity: 1;
+  filter: contrast(120%);
+}
+/* ******** */
+.detalles {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 45px auto;
+  width: 100%;
+  margin-top: 10px;
+  min-height: 85px;
+  max-width: 180px;
+
+}
+
+.detalles h3 {
+  color: #333; /* Color del texto del H3 */
+}
+
+.listaDetalles {
+  text-align: center;
+  background-color: #f4f4f4; /* Color de fondo del div */
+  padding: 15px; /* Espaciado interno del div */
+  border-radius: 8px; /* Bordes redondeados del div */
+  margin-top: 20px; /* Espaciado superior del div */
+  width: 75%;
+}
+
+.listaDetalles ul {
+  list-style-type: none; /* Quita los puntos de la lista */
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.listaDetalles ul li {
+  margin-bottom: 8px; /* Espaciado inferior entre elementos de la lista */
+}
+
+/* TODO ************************************************** */
+/*?Versión PC::::::::::::::::::::::::::::::::::::::::::::  */
+
+@media (min-width: 700px) {
+  header {
+    max-height: 100vh;
+    padding-top: 0;
+  }
+  .img-container img {
+    margin-top: 10vh;
+    margin-bottom: 0;
+  }
+
+  header ul {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    color: #f1f1f1;
+    margin-top: 35vh;
+  }
+
+  .infoWeb {
+    max-height: 100vh;
+    padding-top: 45vh;
+  }
+
+  #sitios {
+    padding-top: 5%;
+    font-size: larger;
+  }
+
+  .rutas {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+  }
+
+  .cartas {
+    width: 25%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: medium;
+    min-width: 300px;
+    max-height: 600px;
+    margin-top: 50px;
+  }
+
+  #viaja {
+    padding: 0;
+    margin-top: 45px;
+    padding-top: 45px;
+    min-height: 100vh;
+  }
+
+  .referidos {
+    display: flex;
+    justify-content: space-around;
+  }
+  .cart {
+    color: #fff;
+    text-shadow: 1px 1px 2px #ff8000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+    min-height: 75vh;
+  }
+
+  .cont {
+    margin-top: 45px;
+    padding-top: 45px;
+  }
+
+  .detalles{
+    min-width: 300px;
+  }
+
+  #form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  input {
+    margin: 10px;
+    text-align: center;
+  }
+
+}
+
+/* !Seccion paseo */
+#paseo {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background-color: #1f1f1f;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.skewed p,
+small {
+  color: #8f8f8f;
+}
+
+.skewed p {
+  font-size: 0.9em;
+  line-height: 23px;
+}
+
+h2 {
+  margin: 0;
+}
+
+.skewed {
+  width: 45em;
+  color: #f1f1f1;
+  display: flex;
+  background: #111;
+  margin: 2em 0;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.text {
+  padding: 1.5em;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.skewed a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.image {
+  width: 50%;
+  height: 17em;
+  position: relative;
+  overflow: hidden;
+}
+
+.image::before {
+  content: "";
+  position: absolute;
+  left: -6.1em;
+  top: 50%;
+  transform: translateY(-50%) rotate(20deg);
+  background-color: #111;
+  width: 40%;
+  height: 140%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+#paseo img {
+  width: 140%;
+}
+
+#paseo h2 {
+  color: #ff8000;
+}
+
+/* ! */
+
+@media screen and (max-width: 700px) {
+  #paseo {
+    min-height: 100vh;
+    padding: 10%;
+    padding-top: 40%;
+  }
+
+  .skewed {
+    display: block;
+    width: 15em;
+  }
+  .image,
+  .text {
+    width: 100%;
+  }
+  img {
+    width: 160%;
+  }
+  .skewed .image::before {
+    width: 120%;
+    height: 40%;
+    top: -5em;
+    left: 50%;
+    transform: translateX(-50%) rotate(10deg);
+  }
+}
+
+

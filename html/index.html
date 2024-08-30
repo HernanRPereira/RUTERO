@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!-- Header Imagen y Menu -->
+  <header>
+    <div class="img-container">
+      <img class="logo" src="/media/rutero_Logo.png" alt="Logo" />
+    </div>
+    <ul>
+      <li><a href="#sitios">Lugares</a></li>
+      <li><a href="#paseo">Paseo Semanal</a></li>
+      <li><a href="#organizar">Organiza</a></li>
+      <li><a href="#viaja">Viaja</a></li>
+      <li><a id="openModalBtn">Ingresar</a></li>
+    </ul>
+  </header>
+  <!-- Info Web -->
+  <div id="visible">
+    <div>
+      <section class="infoWeb">
+        <h2>¿Qué es <span>Ruteros</span>?</h2>
+        <p>
+          <span>Ruteros</span> es una comunidad en línea que lucha contra el
+          sedentarismo y promueve el senderismo como hábito saludable,
+          conectando a viajeros amantes de la naturaleza y guías locales apasionados en ofrecen
+          experiencias únicas y emocionantes.
+        </p>
+      </section>
+    </div>
+    <!-- Sitio = Cartas de los lugares -->
+    <section id="sitios">
+      <h2>Explora</h2>
+      <div class="rutas">
+        <!--? Carta inicio ...  -->
+
+        <!--? carta fin -->
+      </div>
+    </section>
+    <!--! Paseo de la semana = Imagen/ Participar -->
+    <section id="paseo">
+      <h2>Paseo de la Semana</h2>
+      <div class="skewed">
+        <div class="text">
+          <small id="fecha">Febrero 5</small>
+          <h2>Parque Natural Arví</h2>
+          <p>
+            <span>Rutero!</span> ven y disfruta de nuestro paseo de la semana,
+            una aventura rodeados de naturaleza.
+          </p>
+          <a href="#" id="openparticipar" data-bs-toggle="modal" data-bs-target="#exampleModal">participar &rarr;</a>
+        </div>
+        <div class="image">
+          <div>
+            <img src="/media/ParqueArvi.jpg" alt="img" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ! -->
+    <!--todo Info para guías/ Organizar Viajes -->
+    <section id="organizar">
+      <div class="cont">
+        <h2>Guía <span>Rutero</span></h2>
+        <div class="guia">
+          <p>
+            Como guía <span>Rutero</span> puedes organizar la próxima
+            aventura!
+          </p>
+          <a id="openOrganizar"><button>Organiza</button></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- viaja - Link de referido a agencias -->
+    <section id="viaja">
+      <div>
+        <h2>Viaja</h2>
+        <p>
+          Prográmate con uno de nuestros aliados <span>Ruteros</span> en todo
+          el país <span>!</span>
+        </p>
+        <div class="referidos">
+          <div class="cart">
+            <h3>Bogotá</h3>
+            <a
+              href="https://www.booking.com/searchresults.es.html?aid=397594&label=gog235jc-1DCAEoggI46AdIClgDaDKIAQGYAQq4ARnIAQ_YAQPoAQH4AQKIAgGoAgO4AvnLvq0GwAIB0gIkYThmNWViZDUtZWU2Ni00NTExLThhMDQtM2M2MTA3NTlhODBm2AIE4AIB&dest_id=-578472&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0"><button>+
+                Info</button></a>
+          </div>
+          <div class="cart">
+            <h3>Cartagena de Indias</h3>
+            <a
+              href="https://www.booking.com/searchresults.es.html?aid=397594&label=gog235jc-1DCAEoggI46AdIClgDaDKIAQGYAQq4ARnIAQ_YAQPoAQH4AQKIAgGoAgO4AvnLvq0GwAIB0gIkYThmNWViZDUtZWU2Ni00NTExLThhMDQtM2M2MTA3NTlhODBm2AIE4AIB&dest_id=-579943&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0"><button>+
+                Info</button></a>
+          </div>
+          <div class="cart">
+            <h3>Santa Marta</h3>
+            <a
+              href="https://www.booking.com/searchresults.es.html?aid=397594&label=gog235jc-1DCAEoggI46AdIClgDaDKIAQGYAQq4ARnIAQ_YAQPoAQH4AQKIAgGoAgO4AvnLvq0GwAIB0gIkYThmNWViZDUtZWU2Ni00NTExLThhMDQtM2M2MTA3NTlhODBm2AIE4AIB&dest_id=-598739&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0"><button>+
+                Info</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!--todo login Modal------------------------------ -->
+
+  <!-- Modal de Login -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModalBtn">&times;</span>
+      <h2>Login</h2>
+      <form action="#" method="post">
+        <label for="username">Email: </label>
+        <input type="email" id="username" placeholder="@Rutero" name="username" required />
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="password" name="password" required />
+
+        <input type="submit" value="Iniciar Sesión" />
+      </form>
+      <p class="signUpBlack">
+        Not have an account?
+        <a class="signUpHere" href="signup.html">Sign Up here!</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- todo modal para agregar sitio cuando se da click en Organizar-->a
+  <div id="organizarModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModalOrganizar">&times;</span>
+      <h2>Organiza el Viaje <span>Rutero</span></h2>
+      <div id="form">
+        <label for="sitio">Lugar:</label>
+        <input type="text" id="organizarLugar" placeholder="Lugar" name="organizarLugar" required />
+        <input type="date" id="organizarFecha" placeholder="Fecha" name="organizarFecha" required />
+        <label for="Whatsapp" class="Whatsapp">Whatsapp:</label>
+        <a class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+        <input type="text" id="organizarWhatsapp" placeholder="Whatsapp" name="organizarWhatsapp" required />
+
+        <label for="detalles">Detalles:</label>
+        <div class="add">
+          <div class="divInsertado">
+            <textarea class="detalles" required></textarea>
+            <!-- <button class="delete" name="deleteDetalle">X</button> -->
+          </div>
+        </div>
+        <!-- <button id="mas">+</button> -->
+        <button id="organizarBtn">Organizar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- todo Pagina cuando se da click en info+ sitios  -->
+  <div id="addSitio" class="addSitio"></div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title " id="exampleModalLabel">Parque Natural Arvi</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img class="imgModal" src="/media/Arvi.jpg" alt="">
+          <p style="color: green;">Whatsapp</p>
+          <img class="qr" src="/media/QR.jpeg" alt="">
+          <p>El Parque Arví es un parque público abierto de 1761 hectáreas de bosque, pertenecientes a la reserva del río Nare, donde convergen bosques nativos y de plantación.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Participar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- !!!!!!!!!!!!!!!!!!!!!Pie de página!!!!!!!!!! -->
+  <div class="container_footer">
+    <div class="box_footer">
+      <div class="img-container">
+        <a href="#">
+          <img class="logo" src="/media/rutero_Logo.png" alt="" />
+        </a>
+      </div>
+      <div class="terms">
+        <p>Conoce, descubre y vive nuevas experiencias <span>!</span></p>
+      </div>
+    </div>
+    <div class="box-color">
+      <div class="box_footer">
+        <a href="#"> Rutero2024 ©</a>
+      </div>
+    </div>
+  </div>
+  <!-- !!!!!!!!!!!!!!!!!!!!!Pie de página!!!!!!!!!! -->
+
+  <script src="/Js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>

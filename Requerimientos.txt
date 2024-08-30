@@ -1,0 +1,9 @@
+La web debe permitir realizar el registro de usuario: 
+-Guía
+-Aventurero
+
+funciones: 
+-Organizar paseos con amigos.
+-Paseo de la semana (Con temáticas(mascotas,etc)).
+-Los guías podrán patrocinar sus viajes y rutas.
+-información y novedades sobre paseos. 
